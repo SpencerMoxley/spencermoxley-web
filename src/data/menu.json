@@ -1,0 +1,58 @@
+{
+  "sections": [
+    {
+      "label": "About",
+      "shortLabel": "About",
+      "href": "#about",
+      "desc": "Who I am and what I'm into"
+    },
+    {
+      "label": "Expertise",
+      "shortLabel": "Expertise",
+      "href": "#expertise",
+      "desc": "What I focus on and how I work"
+    },
+    {
+      "label": "Skills",
+      "shortLabel": "Skills",
+      "href": "#skills",
+      "desc": "Tools and technologies I use"
+    },
+    {
+      "label": "Highlights",
+      "shortLabel": "Highlights",
+      "href": "#portfolio",
+      "desc": "Work and pursuits I'm proud of"
+    },
+    {
+      "label": "Projects",
+      "shortLabel": "Projects",
+      "href": "#projects",
+      "desc": "Things I've built and am building"
+    },
+    {
+      "label": "Certifications",
+      "shortLabel": "Certs",
+      "href": "#certifications",
+      "desc": "Courses, credentials, and learning"
+    },
+    {
+      "label": "What I Run",
+      "shortLabel": "What I Run",
+      "href": "#services",
+      "desc": "The homelab and projects I operate"
+    },
+    {
+      "label": "Blog",
+      "shortLabel": "Blog",
+      "href": "/blog",
+      "desc": "Writing on tech, homelab, and ideas"
+    },
+    {
+      "label": "Contact",
+      "shortLabel": "Contact",
+      "href": "#contact",
+      "desc": "Get in touch or just say hello"
+    }
+  ]
+}

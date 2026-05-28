@@ -1,0 +1,47 @@
+[
+  {
+    "name": "CS50x: Introduction to Computer Science",
+    "issuer": "HarvardX / edX",
+    "date": "2025",
+    "status": "Earned",
+    "type": "certification",
+    "description": "Harvard's intro to CS — C, Python, algorithms, data structures, memory, and a final project. A rigorous foundation in how computers and programs actually work under the hood.",
+    "credentialUrl": ""
+  },
+  {
+    "name": "AP Computer Science A",
+    "issuer": "College Board",
+    "date": "2025",
+    "status": "Earned",
+    "type": "certification",
+    "description": "Java fundamentals, object-oriented design, data structures, and algorithmic problem solving — the formal coursework behind a lot of self-taught tinkering.",
+    "credentialUrl": ""
+  },
+  {
+    "name": "National Speech & Debate Association",
+    "issuer": "NSDA",
+    "date": "2023–Present",
+    "status": "Earned",
+    "type": "professional-development",
+    "description": "Active competitor accumulating points and degrees through tournament debate — research, case writing, and rounds across multiple seasons.",
+    "credentialUrl": ""
+  },
+  {
+    "name": "CompTIA Network+",
+    "issuer": "CompTIA",
+    "date": "Target: 2026",
+    "status": "In Progress",
+    "type": "in-progress",
+    "description": "Studying networking fundamentals — protocols, subnetting, routing, and troubleshooting — to put a formal credential behind the hands-on networking from my homelab.",
+    "credentialUrl": ""
+  },
+  {
+    "name": "Linux & Self-Hosting Fundamentals",
+    "issuer": "Self-Directed",
+    "date": "Ongoing",
+    "status": "In Progress",
+    "type": "in-progress",
+    "description": "Continuous, hands-on learning across Linux administration, containers, reverse proxies, and monitoring — driven by running and maintaining real services at home.",
+    "credentialUrl": ""
+  }
+]

@@ -1,0 +1,15 @@
+# Netlify build config for the static Astro site.
+# The `prebuild` npm script (scripts/download-assets.mjs) runs automatically before `astro build`
+# to fetch fonts/icons. Output is fully static in `dist/`.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Site is served from the domain root. astro.config.mjs reads BASE_PATH for `base`.
+  BASE_PATH = "/"
+  # Optional: set SITE_URL to your final domain so canonical URLs / sitemaps are correct.
+  # SITE_URL = "https://spencermoxley.com"
+
+  # Optional (project images): set GITHUB_USER (and a GITHUB_TOKEN secret in the Netlify UI,
+  # never in this file) to auto-fetch project images from GitHub READMEs at build time.

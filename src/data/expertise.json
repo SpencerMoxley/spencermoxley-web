@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "key": "homelab",
+      "icon": "server-stack",
+      "title": "Homelab & Infrastructure",
+      "description": "Running real services on my own hardware — virtualization, containers, networking, DNS, and backups. I learn infrastructure by operating it: standing things up, watching them break, and making them resilient."
+    },
+    {
+      "key": "coding",
+      "icon": "code-bracket-square",
+      "title": "Coding & Software",
+      "description": "Building tools and projects that solve a real problem — usually in Python, TypeScript, or whatever fits. I care about code that's readable, does one thing well, and that I can come back to in six months."
+    },
+    {
+      "key": "debate",
+      "icon": "chat-bubble-left-right",
+      "title": "Competitive Debate",
+      "description": "Researching, casing, and arguing both sides of a resolution under time pressure. Debate is how I learned to weigh evidence, anticipate counterarguments, and make a point land with an audience."
+    },
+    {
+      "key": "philosophy",
+      "icon": "book-open",
+      "title": "Philosophy & Reasoning",
+      "description": "Reading and thinking about the questions underneath the tech — ethics, logic, and what makes an argument actually good. It keeps me asking not just how to build something, but whether and why."
+    }
+  ]
+}

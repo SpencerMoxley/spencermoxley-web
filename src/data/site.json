@@ -1,0 +1,98 @@
+{
+  "title": "Spencer Moxley | Tech, Homelab & Ideas",
+  "description": "Personal site of Spencer Moxley — a high school senior into homelab and infrastructure, coding, philosophy, and competitive debate. Projects, writing, and what I'm learning.",
+  "ogSiteName": "Spencer Moxley",
+  "shortName": "SM",
+  "tagline": "Building infrastructure · Writing code · Thinking out loud",
+  "themeStorageKey": "spencermoxley-theme",
+  "web3formsKeyTODO": "Get a free access key at https://web3forms.com and paste it into web3formsKey below. The contact form is disabled until this is set.",
+  "web3formsKey": "",
+  "footerAttribution": {
+    "builder": "Built with Astro on an open-source template",
+    "builderUrl": "https://github.com/MarcusHoltz/astro-portfolio-theme",
+    "host": "Hosted on Netlify",
+    "hostUrl": "https://www.netlify.com"
+  },
+  "retroTvCount": 21,
+  "seoKeywords": [
+    "Spencer Moxley",
+    "Homelab",
+    "Self-Hosting",
+    "Infrastructure",
+    "Networking",
+    "Linux",
+    "Docker",
+    "Proxmox",
+    "Software Development",
+    "Web Development",
+    "Astro",
+    "TypeScript",
+    "Python",
+    "Competitive Debate",
+    "Philosophy",
+    "High School Senior",
+    "Student Developer",
+    "DevOps",
+    "Open Source",
+    "Personal Website",
+    "Blog"
+  ],
+  "navExternal": [
+    {
+      "label": "GitHub",
+      "desc": "Code, projects, and side experiments",
+      "personalKey": "github",
+      "urlTemplate": "https://github.com/{value}"
+    },
+    {
+      "label": "LinkedIn",
+      "desc": "Professional profile",
+      "personalKey": "linkedin",
+      "urlTemplate": "https://linkedin.com/in/{value}"
+    },
+    {
+      "label": "Email",
+      "desc": "Best way to reach me",
+      "personalKey": "email",
+      "urlTemplate": "mailto:{value}"
+    }
+  ],
+  "serviceSites": [
+    {
+      "badge": "Self-Hosted",
+      "badgeColor": "#10b981",
+      "cardAccent": "#10b981",
+      "glowColor": "rgba(16, 185, 129, 0.15)",
+      "iconBg": "rgba(16, 185, 129, 0.1)",
+      "iconBorder": "rgba(16, 185, 129, 0.2)",
+      "iconType": "server",
+      "name": "Home Lab",
+      "url": "",
+      "description": "The cluster of servers, containers, and services I run at home — part playground, part production. Where I learn infrastructure by actually operating it, breaking it, and putting it back together.",
+      "features": [
+        "Virtualization & Containers",
+        "Self-Hosted Apps & Dashboards",
+        "Networking, DNS & Backups"
+      ],
+      "ctaText": "About the Lab"
+    },
+    {
+      "badge": "Open Source",
+      "badgeColor": "#6366f1",
+      "cardAccent": "#6366f1",
+      "glowColor": "rgba(99, 102, 241, 0.12)",
+      "iconBg": "rgba(99, 102, 241, 0.1)",
+      "iconBorder": "rgba(99, 102, 241, 0.18)",
+      "iconType": "web",
+      "name": "GitHub Projects",
+      "url": "https://github.com/SpencerMoxley",
+      "description": "Code I write in the open — small tools, scripts, and projects I build to solve my own problems and learn something new along the way. Always a work in progress.",
+      "features": [
+        "Tools & Automation Scripts",
+        "Web Projects & Experiments",
+        "Learning in Public"
+      ],
+      "ctaText": "View on GitHub"
+    }
+  ]
+}
