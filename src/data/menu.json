@@ -31,18 +31,6 @@
       "desc": "Things I've built and am building"
     },
     {
-      "label": "Certifications",
-      "shortLabel": "Certs",
-      "href": "#certifications",
-      "desc": "Courses, credentials, and learning"
-    },
-    {
-      "label": "What I Run",
-      "shortLabel": "What I Run",
-      "href": "#services",
-      "desc": "The homelab and projects I operate"
-    },
-    {
       "label": "Blog",
       "shortLabel": "Blog",
       "href": "/blog",

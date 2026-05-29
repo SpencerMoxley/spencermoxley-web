@@ -2,85 +2,20 @@
   "layout": "grid",
   "items": [
     {
-      "title": "This Website",
-      "featured": true,
-      "resume": true,
-      "company": "Personal",
-      "category": "webdev",
-      "description": "The site you're looking at — a static Astro build with a self-hosted blog powered by content collections, deployed to Netlify. Data-driven, themeable, and entirely mine to break.",
-      "tags": ["Astro", "TypeScript", "Tailwind CSS", "Netlify", "Static Site"],
-      "icon": "command-line",
-      "sliderImage": "/images/projects/use-astro2.jpg",
-      "sliderOrder": 1,
-      "backgroundImage": "/images/projects/use-astro3.jpg",
-      "images": [
-        "/images/projects/use-astro1.jpg",
-        "/images/projects/use-astro2.jpg",
-        "/images/projects/use-astro3.jpg"
-      ],
-      "link": "",
-      "colorIcon": "devicon:astro",
-      "githubRepo": ""
-    },
-    {
-      "title": "Home Lab Infrastructure",
+      "title": "LabRax — 10\" Modular Mini Server Rack",
       "featured": true,
       "resume": true,
       "company": "Personal",
       "category": "homelab",
-      "description": "An evolving cluster of VMs and containers running real services behind a reverse proxy, with local DNS and backups. My hands-on classroom for virtualization, networking, and operating things reliably.",
-      "tags": ["Proxmox", "Docker", "Linux", "Networking", "Self-Hosting"],
+      "description": "A fully 3D-printed, modular 10-inch 5U mini server rack designed for homelabs, Raspberry Pis, mini PCs, and networking gear. It currently houses a small homelab running three mini PCs.",
+      "tags": ["3D Printing", "Homelab", "Proxmox", "Networking"],
       "icon": "server-stack",
-      "sliderImage": "/images/projects/blender-mockup2.jpg",
-      "sliderOrder": 2,
-      "backgroundImage": "/images/projects/blender-mockup1.jpg",
-      "images": [
-        "/images/projects/blender-mockup1.jpg",
-        "/images/projects/blender-mockup2.jpg",
-        "/images/projects/blender-mockup3.jpg"
-      ],
-      "link": "",
-      "colorIcon": "devicon:docker",
-      "githubRepo": ""
-    },
-    {
-      "title": "Debate Research Toolkit",
-      "featured": true,
-      "company": "Personal",
-      "category": "coding",
-      "description": "A set of scripts and a small app for organizing evidence, tagging cards, and prepping cases faster. Built to replace a mess of docs and folders with something searchable and actually mine.",
-      "tags": ["Python", "SQLite", "Automation", "CLI", "Debate"],
-      "icon": "document-text",
-      "sliderImage": "/images/projects/design-library3.jpg",
-      "sliderOrder": 4,
-      "backgroundImage": "/images/projects/design-library2.jpg",
-      "images": [
-        "/images/projects/design-library1.jpg",
-        "/images/projects/design-library2.jpg",
-        "/images/projects/design-library3.jpg"
-      ],
-      "link": "",
-      "colorIcon": "devicon:python",
-      "githubRepo": ""
-    },
-    {
-      "title": "Self-Hosted Dashboard",
-      "resume": true,
-      "company": "Personal",
-      "category": "webdev",
-      "description": "A single homepage for the homelab — service status, quick links, and metrics pulled from Prometheus. A small front end over a lot of moving parts so the whole setup is glanceable.",
-      "tags": ["React", "TypeScript", "Prometheus", "Grafana", "Homelab"],
-      "icon": "squares-2x2",
-      "sliderImage": "/images/projects/web-app2.jpg",
-      "sliderOrder": 3,
-      "backgroundImage": "/images/projects/web-app3.jpg",
-      "images": [
-        "/images/projects/web-app1.jpg",
-        "/images/projects/web-app2.jpg",
-        "/images/projects/web-app3.jpg"
-      ],
-      "link": "",
-      "colorIcon": "devicon:react",
+      "sliderImage": "/images/projects/labrax.jpg",
+      "sliderOrder": 1,
+      "backgroundImage": "/images/projects/labrax.jpg",
+      "images": ["/images/projects/labrax.jpg"],
+      "link": "https://makerworld.com/en/models/1294480-lab-rax-10-server-rack-5u",
+      "colorIcon": "",
       "githubRepo": ""
     }
   ]

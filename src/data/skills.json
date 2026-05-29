@@ -7,59 +7,34 @@
     {
       "title": "Languages",
       "skills": [
-        { "name": "Python",     "icon": "simple-icons:python" },
-        { "name": "JavaScript", "icon": "simple-icons:javascript" },
-        { "name": "TypeScript", "icon": "simple-icons:typescript" },
-        { "name": "Bash",       "icon": "simple-icons:gnubash" },
-        { "name": "C++",        "icon": "simple-icons:cplusplus" },
-        { "name": "Go",         "icon": "simple-icons:go" }
+        { "name": "Python", "icon": "simple-icons:python" },
+        { "name": "Bash",   "icon": "simple-icons:gnubash" }
       ]
     },
     {
-      "title": "Web & Frontend",
+      "title": "Frameworks",
       "skills": [
-        { "name": "HTML5",        "icon": "simple-icons:html5" },
-        { "name": "CSS3",         "icon": "simple-icons:css3" },
-        { "name": "React",        "icon": "simple-icons:react" },
-        { "name": "Astro",        "icon": "simple-icons:astro" },
-        { "name": "Tailwind CSS", "icon": "simple-icons:tailwindcss" }
+        { "name": "Astro", "icon": "simple-icons:astro" }
       ]
     },
     {
-      "title": "Homelab & Self-Hosting",
+      "title": "Operating Systems",
       "skills": [
-        { "name": "Linux",      "icon": "simple-icons:linux" },
-        { "name": "Proxmox",    "icon": "simple-icons:proxmox" },
-        { "name": "Docker",     "icon": "simple-icons:docker" },
-        { "name": "Nginx",      "icon": "simple-icons:nginx" },
-        { "name": "Cloudflare", "icon": "simple-icons:cloudflare" }
+        { "name": "Linux",    "icon": "simple-icons:linux" },
+        { "name": "Windows",  "icon": "simple-icons:windows" },
+        { "name": "macOS",    "icon": "simple-icons:apple" },
+        { "name": "Ubuntu",   "icon": "simple-icons:ubuntu" },
+        { "name": "Zorin OS", "icon": "simple-icons:zorin" },
+        { "name": "Debian",   "icon": "simple-icons:debian" }
       ]
     },
     {
-      "title": "DevOps & Tooling",
+      "title": "Homelab & Tools",
       "skills": [
-        { "name": "Git",        "icon": "simple-icons:git" },
-        { "name": "GitHub",     "icon": "simple-icons:github" },
-        { "name": "Ansible",    "icon": "simple-icons:ansible" },
-        { "name": "Prometheus", "icon": "simple-icons:prometheus" },
-        { "name": "Grafana",    "icon": "simple-icons:grafana" }
-      ]
-    },
-    {
-      "title": "Systems & Networking",
-      "skills": [
-        { "name": "Debian",    "icon": "simple-icons:debian" },
-        { "name": "Ubuntu",    "icon": "simple-icons:ubuntu" },
-        { "name": "WireGuard", "icon": "simple-icons:wireguard" },
-        { "name": "OPNsense",  "icon": "simple-icons:opnsense" }
-      ]
-    },
-    {
-      "title": "Data & Storage",
-      "skills": [
-        { "name": "SQLite",     "icon": "simple-icons:sqlite" },
-        { "name": "PostgreSQL", "icon": "simple-icons:postgresql" },
-        { "name": "Redis",      "icon": "simple-icons:redis" }
+        { "name": "Proxmox",   "icon": "simple-icons:proxmox" },
+        { "name": "Docker",    "icon": "simple-icons:docker" },
+        { "name": "Tailscale", "icon": "simple-icons:tailscale" },
+        { "name": "GitHub",    "icon": "simple-icons:github" }
       ]
     }
   ]

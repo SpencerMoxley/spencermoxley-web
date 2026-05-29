@@ -11,17 +11,6 @@
     "slides": ["Network Topology", "Service Dashboard", "Rack & Hardware"]
   },
   {
-    "title": "Competitive Debate",
-    "category": "Speech & Debate",
-    "description": "Years of tournaments, research, and rounds — building cases, cutting evidence, and learning to argue clearly under pressure on both sides of a resolution.",
-    "images": [
-      "/images/portfolio/project-2a.jpg",
-      "/images/portfolio/project-2b.jpg",
-      "/images/portfolio/project-2c.jpg"
-    ],
-    "slides": ["Case Prep", "Tournament Round", "Evidence Files"]
-  },
-  {
     "title": "Open-Source & Side Projects",
     "category": "Code",
     "description": "Small tools and experiments I build in the open — automation scripts, web projects, and things I make to understand how something works.",

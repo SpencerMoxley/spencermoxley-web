@@ -385,6 +385,11 @@ const external = siteData.navExternal
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.35s ease;
+    /* Allow the menu to scroll when its items exceed the viewport height
+       (e.g. short mobile screens) so every nav link stays reachable. */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
   }
   .overlay.open {
     opacity: 1;
@@ -440,7 +445,10 @@ const external = siteData.navExternal
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
+    /* `1 0 auto` lets the inner block grow to centre its contents when they fit,
+       but fall back to its natural (content) height when they overflow — letting
+       the scrollable .overlay reveal items that would otherwise be clipped. */
+    flex: 1 0 auto;
     padding: 5rem 6vw 3rem;
     max-width: 860px;
     position: relative;

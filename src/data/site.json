@@ -1,6 +1,6 @@
 {
   "title": "Spencer Moxley | Tech, Homelab & Ideas",
-  "description": "Personal site of Spencer Moxley — a high school senior into homelab and infrastructure, coding, philosophy, and competitive debate. Projects, writing, and what I'm learning.",
+  "description": "Personal site of Spencer Moxley — into homelab and infrastructure, coding, and philosophy. Projects, writing, and what I'm learning.",
   "ogSiteName": "Spencer Moxley",
   "shortName": "SM",
   "tagline": "Building infrastructure · Writing code · Thinking out loud",
@@ -28,10 +28,7 @@
     "Astro",
     "TypeScript",
     "Python",
-    "Competitive Debate",
     "Philosophy",
-    "High School Senior",
-    "Student Developer",
     "DevOps",
     "Open Source",
     "Personal Website",
