@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import personalData from '../data/personal.json';
+
+const base = import.meta.env.BASE_URL;
+const title = `Thanks | ${personalData.name}`;
+---
+
+<Layout title={title} description="Thanks for getting in touch.">
+  <main id="main-content" class="thanks-page">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl py-32 text-center">
+      <div class="check-badge mx-auto mb-8">
+        <svg
+          class="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+        >
+          <path d="M20 6 9 17l-5-5"></path>
+        </svg>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-bold mb-4 gradient-text">Thanks — I'll get back to you.</h1>
+      <p class="text-slate-400 mb-10">Your message is on its way. I'll reply as soon as I can.</p>
+
+      <a href={`${base}`} class="btn-primary inline-flex items-center justify-center">
+        ← Back to portfolio
+      </a>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .thanks-page {
+    background-color: var(--bg);
+    min-height: 100vh;
+  }
+  .check-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 9999px;
+    color: var(--accent);
+    background: rgb(99 102 241 / 0.1);
+    border: 1px solid rgb(99 102 241 / 0.2);
+  }
+</style>

@@ -1,9 +1,9 @@
 ---
 import personalData from '../data/personal.json';
-import siteData from '../data/site.json';
 import { getSocialLinks } from '../lib/socialLinks';
 
 const socialLinks = getSocialLinks(personalData as unknown as Record<string, string | string[]>);
+const base = import.meta.env.BASE_URL;
 ---
 
 <section
@@ -142,19 +142,22 @@ const socialLinks = getSocialLinks(personalData as unknown as Record<string, str
         </div>
 
         <div class="card reveal" style="transition-delay: 0.2s;">
-          <form id="contact-form" class="space-y-4" novalidate>
-            {/* TODO: set web3formsKey in src/data/site.json (free key at https://web3forms.com).
-                The contact form is inert until this access key is provided. */}
-            <input type="hidden" name="access_key" value={siteData.web3formsKey} />
-            <!-- Honeypot: hidden from users but bots fill it in.
-                 Web3Forms rejects any submission where this field is checked. -->
-            <input
-              type="checkbox"
-              name="botcheck"
-              class="hidden"
-              style="display:none;"
-              aria-hidden="true"
-            />
+          <form
+            name="contact"
+            method="POST"
+            action={`${base}thanks`}
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            class="space-y-4"
+          >
+            {/* Netlify identifies this form by parsing the static HTML at deploy time.
+                The hidden form-name input ties JS-free POSTs back to this form. */}
+            <input type="hidden" name="form-name" value="contact" />
+            {/* Honeypot: hidden from humans, but bots fill it in. Netlify silently
+                discards any submission where this field is non-empty. */}
+            <p class="hidden" aria-hidden="true">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label
@@ -224,7 +227,6 @@ const socialLinks = getSocialLinks(personalData as unknown as Record<string, str
                 placeholder="What would you like to tell us?"></textarea>
             </div>
 
-            <div aria-live="polite" aria-atomic="true" id="form-status" class="sr-only"></div>
             <button type="submit" class="btn-primary w-full flex items-center justify-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -262,50 +264,6 @@ const socialLinks = getSocialLinks(personalData as unknown as Record<string, str
       { threshold: 0.1 }
     );
     io.observe(el);
-  });
-
-  const form = document.getElementById('contact-form') as HTMLFormElement | null;
-  const status = document.getElementById('form-status') as HTMLElement | null;
-  const button = form?.querySelector('button[type="submit"]') as HTMLButtonElement | null;
-  // Stash the button's original inner HTML before mutating it to "Sending…".
-  // Restored in the finally block so the button always returns to its original state,
-  // including any icon SVG, regardless of whether the request succeeded or failed.
-  const BUTTON_HTML = button?.innerHTML ?? 'Send Message';
-
-  function setStatus(msg: string, isError: boolean) {
-    if (!status) return;
-    status.textContent = msg;
-    status.className = isError ? 'mt-3 text-sm text-red-400' : 'mt-3 text-sm text-green-400';
-  }
-
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    if (button) {
-      button.disabled = true;
-      button.textContent = 'Sending…';
-    }
-    setStatus('', false);
-
-    try {
-      const res = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: new FormData(form!),
-      });
-      const data = (await res.json()) as { success?: boolean; message?: string };
-      if (res.ok) {
-        setStatus("Message sent! I'll be in touch soon.", false);
-        form!.reset();
-      } else {
-        setStatus(data.message ?? 'Something went wrong. Please try again.', true);
-      }
-    } catch {
-      setStatus('Network error. Check your connection and try again.', true);
-    } finally {
-      if (button) {
-        button.disabled = false;
-        button.innerHTML = BUTTON_HTML;
-      }
-    }
   });
 </script>
 
