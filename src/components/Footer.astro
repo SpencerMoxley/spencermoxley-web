@@ -17,8 +17,6 @@ const { footerAttribution } = siteData;
 <footer
   id="site-footer"
   style="position: relative; background: var(--footer-bg); border-top: 1px solid var(--footer-border);"
-  data-base={base}
-  data-gif-count={siteData.retroTvCount}
 >
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl py-14">
     <div class="footer-grid">
@@ -90,7 +88,7 @@ const { footerAttribution } = siteData;
           footerAttribution.host && (
             <>
               {' '}
-              / Hosting by{' '}
+              ·{' '}
               <a href={footerAttribution.hostUrl} target="_blank">
                 {footerAttribution.host}
               </a>
@@ -162,17 +160,11 @@ const { footerAttribution } = siteData;
     aspect-ratio: 2/1;
     border: 3px solid rgba(255, 255, 255, 0.35);
     background: var(--bg);
-    background-size: 130% auto;
-    background-position: top left;
-    filter: grayscale(55%) brightness(88%);
     padding: 1.1em 1em 0.5em 1em;
     cursor: default;
-    transition:
-      filter 0.4s ease,
-      border-color 0.4s ease;
+    transition: border-color 0.4s ease;
   }
   .footer-square:hover {
-    filter: grayscale(20%) brightness(100%);
     border-color: rgba(99, 102, 241, 0.7);
   }
 
@@ -430,21 +422,3 @@ const { footerAttribution } = siteData;
     transform: translateY(-2px);
   }
 </style>
-
-<script>
-  // base and gifCount are read from data attributes rather than hardcoded so this script
-  // works correctly regardless of the site's BASE_PATH deployment sub-directory.
-  const footer = document.getElementById('site-footer') as HTMLElement | null;
-  const base = footer?.dataset.base ?? '/';
-  const count = parseInt(footer?.dataset.gifCount ?? '21', 10);
-  const gifs = Array.from(
-    { length: count },
-    (_, i) => `${base}images/retro-tv/bgtv_(${i + 1}).gif`
-  );
-  // Pick a different retro TV gif on each page load.
-  const pick = gifs[Math.floor(Math.random() * gifs.length)];
-  const sq = document.getElementById('footer-square') as HTMLElement | null;
-  if (sq) {
-    sq.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.82)), url('${pick}')`;
-  }
-</script>

@@ -5,8 +5,7 @@
   "shortName": "SM",
   "tagline": "Building infrastructure · Writing code · Thinking out loud",
   "themeStorageKey": "spencermoxley-theme",
-  "web3formsKeyTODO": "Get a free access key at https://web3forms.com and paste it into web3formsKey below. The contact form is disabled until this is set.",
-  "web3formsKey": "",
+  "web3formsKey": "222e7039-6a3e-47b1-bcbf-96c0ba485c84",
   "footerAttribution": {
     "builder": "Built with Astro on an open-source template",
     "builderUrl": "https://github.com/MarcusHoltz/astro-portfolio-theme",
